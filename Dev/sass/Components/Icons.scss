@@ -1,0 +1,64 @@
+.Icon{
+    color:$BackgroundAlt;
+
+    &--float,&--Social{
+        font-size:3rem
+    }
+
+    &--menu{
+        font-size:2.5rem;
+        padding-right:1rem;
+        @include Medium{
+            padding-right:0;
+        }
+    }
+
+    &--Social{
+        background-color:$ColorPrimaryAlt;
+        padding: 0.5rem;
+        margin-left:1rem;
+        box-shadow:0 3px 5px $Shadow;
+        &:nth-child(1),&:nth-child(2),&:nth-child(3){
+            margin-top:1rem;
+            margin-bottom:1rem;
+        }
+
+        &:nth-child(1){
+            font-size:3.2rem;
+            padding:0.4rem 0.9rem 0.4rem 0.9rem;
+        }
+
+        &:nth-child(3),&:nth-child(6){
+            margin-left:1rem;
+        }
+
+        @include Medium{
+            &:nth-child(n){
+                margin:0 0.3rem;
+            }
+        }
+
+        &__banner{
+            border-radius:50%;
+            &:hover,&:active{
+                box-shadow: 0 4px 7px $Shadow;
+                background-color:$BackgroundAlt;
+                color: $ColorPrimaryAlt;
+            }
+        }
+    }
+
+
+    &--info{
+        font-size:4rem;
+        color:$ColorSecundaryAlt;
+
+        &.icon-mobile{
+            font-size:6rem;
+        }
+    }
+
+    &--section{
+        font-size:2.5rem;
+    }
+}

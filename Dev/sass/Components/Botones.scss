@@ -1,0 +1,83 @@
+.btn{
+    border-radius:1.25rem;
+    padding:0.6rem;
+    box-shadow:0 3px 5px $Shadow;
+
+    &:hover, &:active{
+        box-shadow: 0 4px 7px $Shadow;
+    }
+
+    &--section{
+        width:12rem;
+        @include Flex;
+        @include NoWrap;
+        @include FlexCenter;
+        &:hover,&:active{
+            background-color:$BackgroundAlt;
+        }
+    }
+
+    &--contactame{
+        background-color:$ColorPrimaryAlt;
+        &:hover,&:active{
+            color:$ColorPrimaryAlt;
+            & .icon-message{
+                color:$ColorPrimaryAlt;
+                &+.text--section{
+                    color:$ColorPrimaryAlt;
+                }
+            }
+        }
+    }
+
+    &--github{
+        background-color:$Black;
+        &:hover,&:active{
+            color:$Black;
+            & .icon-github{
+                color:$Black;
+                &+.text--section{
+                    color:$Black;
+                }
+            }
+        }
+    }
+
+    &--float{
+        position: fixed;
+        border-radius:50%;
+        bottom:0.5rem;
+        z-index:100;
+    }
+
+    &--menu,&--left{
+        left:0.5rem;
+        background-color:$ColorPrimaryAlt;
+        @include Medium{
+            display:none;
+        }
+    }
+
+    &--messenger,&--rigth{
+        right:0.5rem;
+        background-color:$ColorPrimaryAlt;
+    }
+
+    &--left,&--right{
+        display: none;
+    }
+
+    &--home{
+        background-color:$ColorPrimaryAlt2;
+        margin:1rem 0;
+        &:hover,&:active{
+            color:$ColorPrimaryAlt2;
+            & .icon-home{
+                color:$ColorPrimaryAlt2;
+                &+.text--section{
+                    color:$ColorPrimaryAlt2;
+                }
+            }
+        }
+    }
+}

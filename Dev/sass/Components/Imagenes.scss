@@ -1,0 +1,33 @@
+.Logo{
+    width:80vw;
+
+    @include Large{
+        width:60vw;
+    }
+
+    &--Proyecto{
+        padding:1rem 0;
+        @include Small{
+            width:200px
+        }
+
+        @include Medium{
+            width:300px;
+        }
+    }
+
+    &--Footer{
+        width:70vw;
+        @include Medium{
+            width:50vw;
+        }
+
+        @include Large{
+            width:30vw;
+        }
+    }
+
+    &--404{
+        margin:1rem 0;
+    }
+}

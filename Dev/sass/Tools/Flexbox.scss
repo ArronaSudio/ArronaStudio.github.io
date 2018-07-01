@@ -1,0 +1,69 @@
+@mixin Flex{
+    display: flex;
+}
+
+@mixin Wrap{
+    flex-wrap:wrap
+}
+
+@mixin NoWrap{
+    flex-wrap:nowrap
+}
+
+@mixin Columns{
+    flex-direction: column;
+}
+
+@mixin Row{
+    flex-direction: row;
+}
+
+@mixin MainJustify{
+    @include Flex;
+    justify-content: space-between;
+}
+
+@mixin MainDistribute{
+    @include Flex;
+    justify-content: space-around;
+}
+
+@mixin MainEvenly{
+    @include Flex;
+    justify-content: space-evenly;
+}
+
+@mixin MainCenter{
+    @include Flex;
+    justify-content: center;
+}
+
+@mixin MainStart{
+    @include Flex;
+    justify-content: flex-start;
+}
+
+@mixin MainEnd{
+    @include Flex;
+    justify-content: flex-end;
+}
+
+@mixin crossStart{
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+@mixin crossEnd{
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+@mixin crossCenter{
+    align-items: center;
+    align-content: center;
+}
+
+@mixin FlexCenter{
+    @include MainCenter;
+    @include crossCenter;
+}

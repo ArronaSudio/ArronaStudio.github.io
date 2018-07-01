@@ -1,0 +1,43 @@
+body{
+    background-color:$Background;
+    @supports(grid-template:'Supports'){
+        background-color:var(--Background);
+    }
+}
+
+header{
+    width:100%;
+    background-color:$ColorPrimaryAlt2;
+}
+
+nav,ul,li,footer{
+    width:100%;
+}
+
+nav,ul,li,footer{
+    @include Flex;
+    @include Columns;
+    @include FlexCenter;
+}
+
+nav,ul,li{
+    @include Medium{
+        @include Row;
+    }
+}
+
+ul{
+    @include Medium{
+        width: 90%;
+    }
+}
+
+li{
+    border-bottom:2px solid $ColorSecundaryAlt;
+
+    @include Medium{
+        border-bottom:0px;
+    }
+}
+
+

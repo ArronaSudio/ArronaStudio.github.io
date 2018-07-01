@@ -1,0 +1,133 @@
+.Content{
+    @include Content;
+    max-width:100%;
+    @supports(grid-template:'Supports'){
+        max-width:100%;
+    }
+    @include Flex;
+    @include Columns;
+    @include FlexCenter;
+}
+
+.footer--cont{
+    background-color:$ColorPrimaryAlt2;
+    width: 100%;
+    padding:1rem 0;
+    @include Flex;
+    @include Columns;
+    @include FlexCenter;
+
+    @include Medium{
+        @include Row;
+        @include Wrap;
+    }
+}
+
+.dates{
+    @include Flex;
+    @include Columns;
+    @include FlexCenter;
+}
+
+.Cont--copyrigth{
+    background-color:$ColorPrimary;
+    width: 100%;
+    padding:1rem 0;
+}
+
+.menu--items{
+    width:100%;
+    padding: 1rem 0;
+    @include Flex;
+    @include Row;
+    @include MainJustify;
+    transition:all .2s;
+    &:hover,&:active{
+        background-color:$ColorSecundaryAlt;
+    }
+
+    @include Medium{
+        @include FlexCenter;
+    }
+}
+
+.cont--banner{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    @include Flex;
+    @include Columns;
+    @include FlexCenter;
+}
+
+.menu--smartphone{
+    display: none;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    height:100vh;
+    @include Medium{
+        display:block;
+        position: relative;
+        height:4.5rem;
+    }
+}
+
+.content--info{
+    @include Flex;
+    @include Row;
+    @include MainDistribute;
+    @include Wrap;
+}
+
+.info{
+    width: 90%;
+    padding:1rem 0;
+    @include Flex;
+    @include Row;
+    @include FlexCenter;
+    @include Small{
+        width: 40%;
+    }
+    @include Medium{
+        width: 30%;
+    }
+}
+
+.Proyectos{
+    width:90%;
+    margin:1rem 0;
+    padding:1rem 0;
+    border-radius:1rem;
+    box-shadow:0 3px 5px $Shadow;
+    @include Flex;
+    @include Columns;
+    @include FlexCenter;
+    @include Small{
+        width:40%;
+    }
+    @include Medium{
+        width: 40%;
+    }
+    @include Large{
+        width: 30%;
+    }
+}
+
+.messenger{
+    display: none;
+    position:fixed;
+    right: .5rem;
+    bottom:5rem;
+    border-radius:1rem;
+    width:96%;
+    height:82vh;
+    background-color:$BackgroundAlt;
+    box-shadow:0 3px 5px $Shadow;
+    @include Medium{
+        right: 1rem;
+        width:300px;
+        height:500px;
+    }
+}

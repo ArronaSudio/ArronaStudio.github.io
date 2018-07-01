@@ -1,0 +1,85 @@
+.text{
+    font-size:16px;
+    color:$BackgroundAlt;
+    text-align: center;
+    @include Large{
+        font-size:20px;
+    }
+
+    &--menu{
+        font-size:30px;
+        padding-left:1rem;
+        @include Medium{
+            padding-left:0;
+            padding-right:1rem;
+        }
+    }
+
+    &--banner{
+        font-size:13vw;
+
+        @include Small{
+            font-size:8vw;
+        }
+
+        @include Medium{
+            font-size:9vw;
+        }
+
+        @include Large{
+            font-size:7vw;
+        }
+    }
+
+    &--info{
+        color:$ColorPrimaryAlt;
+        margin-left:1rem;
+    }
+
+    &--section{
+        padding-left:1rem;
+    }
+
+    &--phone{
+        font-size:8vw;
+
+        @include Medium{
+            font-size:6vw;
+        }
+
+        @include Large{
+            font-size:4vw;
+        }
+    }
+
+    &--email{
+        font-size:20px;
+        @include XSmall{
+            font-size:7vw;
+        }
+    }
+
+    &--copyright{
+        font-size:24px;
+    }
+
+    &--email,&--copyright{
+        @include Small{
+            font-size:6vw;
+        }
+
+        @include Medium{
+            font-size:5vw;
+        }
+
+        @include Large{
+            font-size:3vw;
+        }
+    }
+
+    &--Error{
+        color: $BlackAlt;
+        font-size:'Roboto-Bold';
+        margin:1rem 0;
+    }
+}

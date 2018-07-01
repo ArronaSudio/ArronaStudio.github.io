@@ -1,0 +1,56 @@
+
+$ColorPrimary       :#1976D2;
+$ColorPrimaryAlt    :#0D47A1;
+$ColorPrimaryAlt2   :#42A5F5;
+$ColorSecundary     :#EF5350;
+$ColorSecundaryAlt  :#B71C1C;
+$ColorTertiary      :#FFAB91;
+$ColorTertiaryAlt   :#BF360C;
+$Background         :#EEEEEE;
+$BackgroundAlt      :#FFFFFF;
+$Shadow             :rgba(36,36,36,0.36);
+$Black              :#000000;
+$BlackAlt           :#212121;
+$Error              :#5D0000;
+
+$FontTitulo         :'Roboto-Black';
+$FontSubTitulo      :'Roboto-Bold';
+$Font               :'Roboto';
+
+$FontSize   :16px;
+
+$MaxWidth   :96%;
+$Space      :1rem;
+
+@supports (grid-template:'Supports'){
+    :root{
+        /*Colores*/
+
+        --ColorPrimary       :#{ $ColorPrimary      };
+        --ColorPrimaryAlt    :#{ $ColorPrimaryAlt   };
+        --ColorPrimaryAlt2   :#{ $ColorPrimaryAlt2  };
+        --ColorSecundary     :#{ $ColorSecundary    };
+        --ColorSecundaryAlt  :#{ $ColorSecundaryAlt };
+        --ColorTertiary      :#{ $ColorTertiary     };
+        --ColorTertiaryAlt   :#{ $ColorTertiaryAlt  };
+        --Background         :#{ $Background        };
+        --BackgroundAlt      :#{ $BackgroundAlt     };
+        --Shadow             :#{ $Shadow            };
+        --Black              :#{ $Black             };
+        --BlackAlt           :#{ $BlackAlt          };
+        --Error              :#{ $Error             };
+
+        /*Fuentes Tipograficas*/
+
+        --FontTitulo        :#{ $FontTitulo     };
+        --FontSubTitulo     :#{ $FontSubTitulo  };
+        --Font              :#{ $Font           };
+
+        /*Tamaño*/
+
+        --FontSize   :#{ $FontSize };
+
+        --MaxWidth   :#{ $MaxWidth };
+        --Space      :#{ $Space    };
+    }
+}

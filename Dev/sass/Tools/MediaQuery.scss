@@ -1,0 +1,35 @@
+$XSmall :   rem(320px)  ;
+$Small  :   rem(480px)  ;
+$Medium :   rem(768px)  ;
+$Large  :   rem(1024px) ;
+$XLarge :   rem(1440px) ;
+
+@mixin XSmall{
+    @media screen and (min-width:$XSmall + 0.1rem){
+        @content;
+    }
+}
+
+@mixin Small{
+    @media screen and (min-width:$Small){
+        @content;
+    }
+}
+
+@mixin Medium{
+    @media screen and (min-width:$Medium){
+        @content;
+    }
+}
+
+@mixin Large{
+    @media screen and (min-width:$Large){
+        @content;
+    }
+}
+
+@mixin XLarge{
+    @media screen and (min-width:$XLarge){
+        @content;
+    }
+}

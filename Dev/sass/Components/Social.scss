@@ -1,0 +1,7 @@
+.cont--social{
+    @include Flex;
+    @include Row;
+    @include Wrap;
+    @include FlexCenter;
+    padding:0.5rem 0;
+}

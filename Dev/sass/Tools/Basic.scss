@@ -1,0 +1,28 @@
+@mixin Content{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    max-width:$MaxWidth;
+    @supports(grid-template:'Supports'){
+        max-width:var(--MaxWidth);
+    }
+}
+
+@mixin AllContent{
+    $MaxWidth:100%;
+    max-width:$MaxWidth;
+    @supports(grid-template:'Supports'){
+        --MaxWidth:#{$MaxWidth};
+        max-width:var(--MaxWidth);
+    }
+}
+
+@mixin Item{
+    margin:0;
+    padding-left:$Space;
+    padding-right:$Space;
+    @supports(grid-template:'Supports'){
+        padding-left:$var(--Space);
+        padding-right:$var(--Space);
+    }
+}
