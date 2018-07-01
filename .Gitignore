@@ -455,7 +455,20 @@ __pycache__/
 
 # End of https://www.gitignore.io/api/git,node,macos,linux,windows,sublimetext,visualstudio
 
-Public
-Public/Fonts
-Public/Fonts/icons
-Public/Fonts/Roboto
+Dev
+Dev/ES6
+Dev/sass
+Dev/sass/Components
+Dev/sass/Elements
+Dev/sass/Generic
+Dev/sass/Objects
+Dev/sass/Settings
+Dev/sass/Tools
+Dev/sass/Utiles
+.babelrc
+.Editorconfig
+.gitattributes
+Chagelog.md
+Gulpfile.js
+package-lock.json
+package.json
