@@ -67,6 +67,24 @@
                 Actualice su navegador por favor
             </p>
     <![endif]-->
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="1451091961658067"
+  theme_color="#0084ff"
+  logged_in_greeting="Hola 😀, ¿En que te puedo ayudar?"
+  logged_out_greeting="Hola 😀, ¿En que te puedo ayudar?">
+</div>
     <div class="Content">
         <header class="menu--smartphone">
             <nav>
@@ -202,7 +220,7 @@
     <script src="Public/js/main.js"></script>
 
 <!-- WhatsHelp.io widget -->
-<script type="text/javascript">
+<!--script type="text/javascript">
     (function () {
         var options = {
             facebook: "1451091961658067", // Facebook page ID
@@ -214,7 +232,7 @@
         s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
-</script>
+</script-->
 <!-- /WhatsHelp.io widget -->
 </body>
 </html>
